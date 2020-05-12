@@ -1,6 +1,6 @@
 #expo react
-node_modules/**/*
-.expo/*
+node_modules
+.expo
 npm-debug.*
 *.jks
 *.p8
@@ -16,5 +16,7 @@ web-build/
 .idea/
 
 # expo file
-.expo-shared/*
+.expo-shared
+
+web-build
 
