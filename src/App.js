@@ -6,8 +6,8 @@ import * as Font from 'expo-font';
 import * as React from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 
-import BottomTabNavigator from './navigation/BottomTabNavigator';
-import LinkingConfiguration from './navigation/LinkingConfiguration';
+import BottomTabNavigator from '../navigation/BottomTabNavigator';
+import LinkingConfiguration from '../navigation/LinkingConfiguration';
 
 const Stack = createStackNavigator();
 
@@ -23,7 +23,7 @@ export default function App(props) {
         // Load fonts
         await Font.loadAsync({
           ...Ionicons.font,
-          'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
+          'space-mono': require('../assets/fonts/SpaceMono-Regular.ttf'),
         });
       } catch (e) {
         // We might want to provide this error information to an error reporting service
